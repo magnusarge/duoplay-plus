@@ -27,5 +27,11 @@
     "images/seen-not-hover.png"],
     "matches":["https://duoplay.ee/*", "https://www.duoplay.ee/*"]
   }],
-  "permissions": ["storage"]
+  "permissions": ["storage"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "duoplay.plus@arge.ee",
+      "strict_min_version": "109.0"
+    }
+  }
 }
