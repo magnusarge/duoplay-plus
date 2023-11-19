@@ -4,8 +4,8 @@
  * Author: Magnus Arge
  * Created: 16.11.2023
  */
-//const seenImagePath =  chrome.runtime.getURL("./images/seen-yes.png");
-//const unseenImagePath =  chrome.runtime.getURL("./images/seen-not.png");
+
+
 
 let episodes = document.querySelectorAll('a.show-seasons__episode'), i;
 const currentTitle = getCurrentTitle();
