@@ -1,0 +1,30 @@
+.seen-button {
+    display:inline-block;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    margin: 2px;
+    background-image: url(chrome-extension://__MSG_@@extension_id__/images/seen-not.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.seen-button:hover {
+    background-image: url(chrome-extension://__MSG_@@extension_id__/images/seen-not-hover.png);
+}
+
+.seen-button.seen, .seen-button.seen:hover {
+    background-image: url(chrome-extension://__MSG_@@extension_id__/images/seen-yes.png);
+}
+
+@-moz-document url-prefix() {
+    .seen-button {
+        background-image: url(/images/seen-not.png);
+    }
+    .seen-button:hover {
+        background-image: url(/images/seen-not-hover.png);
+    }
+    .seen-button.seen, .seen-button.seen:hover {
+        background-image: url(/images/seen-yes.png);
+    }
+  }
